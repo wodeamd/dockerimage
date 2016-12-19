@@ -1,7 +1,7 @@
 # This image provides a base for building and running WildFly applications.
 # It builds using maven and runs the resulting artifacts on WildFly 10.0.0 Final
 
-FROM s2i-centos7-java:latest
+FROM wodeamd/s2i-centos7-java:latest
 
 MAINTAINER Chen Feixiang <chenfeixiang@nationsky.com>
 
