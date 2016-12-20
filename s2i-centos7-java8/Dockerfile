@@ -1,6 +1,6 @@
-# Used to build image: s2i-centos-java8
+# Used to build image: s2i-centos7-java8
 
-FROM openshift/s2i-base-container
+FROM openshift/base-centos7
 ENV JAVA_VERSION=8 \
     JAVA_UPDATE=102 \
     JAVA_BUILD=14 \

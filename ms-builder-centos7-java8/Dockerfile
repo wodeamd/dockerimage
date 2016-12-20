@@ -1,8 +1,8 @@
-# Used to build image: ms-builder-centos-java8
+# Used to build image: ms-builder-centos7-java8
 # This image provides a base for building and running microservice Java applications.
 # It builds using maven and runs the resulting artifacts with "java -jar ..."
 
-FROM wodeamd/s2i-centos-java8:latest
+FROM wodeamd/s2i-centos7-java8:latest
 
 MAINTAINER Chen Feixiang <chenfeixiang@nationsky.com>
 

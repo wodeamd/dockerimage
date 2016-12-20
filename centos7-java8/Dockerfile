@@ -1,5 +1,5 @@
 # Used to build image: centos-java8
-FROM centos
+FROM centos:7
 ENV JAVA_VERSION=8 \
     JAVA_UPDATE=102 \
     JAVA_BUILD=14 \
