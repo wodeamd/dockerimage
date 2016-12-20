@@ -1,8 +1,11 @@
-FROM centos
+# Used to build image: s2i-centos-java8
+
+FROM openshift/s2i-base-container
 ENV JAVA_VERSION=8 \
     JAVA_UPDATE=102 \
     JAVA_BUILD=14 \
     JAVA_HOME="/usr/lib/jvm/default-jvm"
+# To speed up jdk downloading by using: http://10.1.15.188:8000/jdk-8u102-linux-x64.tar.gz	
 RUN yum install -y wget
 RUN cd "/tmp" && \
     wget --header "Cookie: oraclelicense=accept-securebackup-cookie;" \
